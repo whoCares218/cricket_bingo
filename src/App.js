@@ -48,7 +48,8 @@ const App = () => {
     } else {
       setTimeLeft(0);
     }
-  }, [currentPlayerIndex, selectedTime, gameStarted]);
+  }, [currentPlayerIndex, selectedTime, gameStarted, playersList.length, skipPlayer]); // ADDED DEPENDENCIES HERE
+
 
   const generateGridItems = () => {
     let gridItems = [];
